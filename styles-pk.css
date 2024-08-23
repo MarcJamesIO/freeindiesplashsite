@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "yourfont";
+  src: url("/fonts/Arial Black") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  background: #181816;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "yourfont", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+h3,
+a {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+  line-height: 1.7rem;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+.press-kit {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .press-kit {
+    padding: 20px;
+    padding-bottom: 200px;
+  }
+}
+
+.factsheet {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.fs-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fs-item h2 {
+  margin-right: 10px;
+}
+
+.fs-screen {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .fs-screen {
+    width: 100%;
+  }
+}
+
+.hand-drawn-border-bottom {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 2px rgb(255, 255, 255);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.social-links {
+  margin-left: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a svg {
+  color: white;
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-link img {
+    width: 100%;
+  }
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  margin-top: 80px;
+}
+
+.logo-link img {
+  width: 100%;
+}
